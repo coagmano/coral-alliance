@@ -7,7 +7,6 @@
     <meta charset="utf-8">
 
     <title><?php wp_title( '|', true, 'right' ); ?></title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -37,21 +36,4 @@
 
 <body <?php body_class(); ?>>
 
-<div class="header-bg">
-  <div class="container">
-    <header>
-      <img src="<?php bloginfo('template_directory'); ?>/assets/coral-alliance-logo.png">
-      <hr>
-      <h1>The Great Barrier Reef<br> is under threat</h1>
-      <p>Help us save this wonder of the world.</p>
-      <a href="#petition"><button class="primary">Sign the petition</button></a>
-      <p> or </p>
-      <p>
-        <a href="#more">Find out more<br>
-          <img src="<?php bloginfo('template_directory'); ?>/assets/arrow-down-gray.png"></a>
-      </p>
-      <hr>
 
-    </header>
-  </div>
-</div>
