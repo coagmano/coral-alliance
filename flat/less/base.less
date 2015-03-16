@@ -1,0 +1,132 @@
+//
+// Base CSS File - Standard Desktops & CSS Default ~960px
+// --------------------------------------------------
+
+// Grid Variables
+// -------------------
+
+@containerWidth: 960px;
+@columnCount:    12;
+@gutterRatio:    25%;
+@paddingRatio:   100%;
+
+
+// Type Variables
+// -------------------
+
+@fontSize: 15px;
+@lineHeight: 140%;
+
+
+// Base Styles
+// -------------------
+
+@import "_reset.less";
+
+@import "_variables.less";
+@import "_mixins.less";
+
+@import "_layout.less";
+@import "_type.less";
+@import "_forms.less";
+@import "_buttons.less";
+@import "_menus.less";
+
+
+// Custom Styles
+// -------------------
+
+.declaration-order {
+    /* Positioning */
+    position: absolute;
+    top: 0
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    /* Box-model */
+    display: block;
+    float: right;
+    width: 100px;
+    height: 100px;
+
+    /* Typography */
+    font: normal 13px "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+
+    /* Visual */
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+
+    /* Misc */
+    opacity: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header-bg {
+    height: calc(100vh);
+    min-height: 700px;
+    width: 100%;
+
+    color: white;
+    text-align: center;
+    text-shadow: #777 1px 1px 2px;
+
+    background-image: url('../assets/reef-from-air-1200.jpg');
+    .background-size(cover);
+    
+    a {
+        color: white;
+    }
+}
+
+.find-out-more {
+    display: inline-block;
+    background-image: url('../assets/arrow-down.png');
+}
+
+.intermission {
+    height: calc(50vh);
+    background-position: center;
+    .background-size(cover);
+    background-repeat: no-repeat;
+    &.nemo {
+        background-image: url('../assets/looking-at-nemo-1200.jpg');
+    }
+    &.turtle {
+        background-image: url('../assets/turtle-1200.jpg');
+    }
+}
+
+.secondary-bg {
+    padding: 1em 0;
+    background: @secondaryColor;
+
+    p, h2, h3, h4, h5, label, span {
+        color: white;
+    }
+
+    a {
+        color: @tertiaryColor;
+    }
+}
+.progress {
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #f6f6f6;
+
+    .bar {
+        width: 0%;
+        height: 100%;
+        float: left;
+        background: @primaryColor;
+    }
+}
